@@ -8,7 +8,7 @@ with open("valid-wordle-words.txt") as words:
         word_list.append(line.rstrip("\n"))
 
 def find_word(pattern):
-    if pattern.strip([g, y, b]):
+    if pattern.strip(["g", "y", "b"]):
         return "input contains invalid character."
     
     if len(pattern.strip()) > 30:
