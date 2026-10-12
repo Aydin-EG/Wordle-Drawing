@@ -12,7 +12,7 @@ def find_word(pattern):
         return "input contains invalid character."
     
     if len(pattern.strip()) > 30:
-        answer += "input is too long."
+        return "input is too long."
 
     for group in pattern.split(" "):
         for word in word_list:
